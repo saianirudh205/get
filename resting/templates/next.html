@@ -1,0 +1,54 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+   {% for dict in man %}
+
+     {% for key,value in dict.items  %}
+     
+     
+        <div class="msg right-msg">
+      <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Anirudh</div>
+          <div class="msg-info-time">----</div>
+        </div>
+
+        <div class="msg-text">{{key}}</div>
+      </div>
+    </div>
+     
+
+      
+         <div class="msg left-msg">
+      <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Sunny Leone</div>
+          <div class="msg-info-time">---</div>
+        </div>
+
+        <div class="msg-text">{{value}}</div>
+      </div>
+    </div>
+      
+ 
+     
+     
+     {% endfor %}
+   
+   
+   {% endfor %}
+
+    
+   
+
+
+
+      
+
+{% endblock content %}
+
